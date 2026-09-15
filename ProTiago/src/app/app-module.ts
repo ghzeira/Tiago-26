@@ -1,5 +1,6 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -16,26 +17,33 @@ import { Ex10 } from './Lista/ex10/ex10';
 import { Ex11 } from './Lista/ex11/ex11';
 import { ExFinal } from './Lista/ex-final/ex-final';
 
-
 @NgModule({
-declarations: [
-  App,
-  Ex1,
-  Ex2,
-  Ex3,
-  Ex4,
-  Ex5,
-  Ex6,
-  Ex7,
-  Ex8,
-  Ex9,
-  Ex10,
-  Ex11,
-  ExFinal
-],
-  
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [provideBrowserGlobalErrorListeners()],
+  declarations: [
+    App,
+    Ex1,
+    Ex2,
+    Ex3,
+    Ex4,
+    Ex5,
+    Ex6,
+    Ex7,
+    Ex8,
+    Ex9,
+    Ex10,
+    Ex11,
+    ExFinal
+  ],
+
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+
+  providers: [
+    provideBrowserGlobalErrorListeners()
+  ],
+
   bootstrap: [App],
 })
 export class AppModule {}

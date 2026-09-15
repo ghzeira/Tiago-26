@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class Ex1 {
   nome = 'Carlos';
   idade = 25;
-  curso = 'Sistemas de Informação';
+  curso = 'Engenharia de Software';
 }
