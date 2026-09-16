@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-
-  nome = 'Carlos';
-  idade = 25;
-  curso = 'Sistemas de Informação';
-
+  protected readonly title = signal('PI-Thiago');
 }
